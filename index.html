@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Word Cookies Helper</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <h1>Word Cookies Helper</h1>
+
+    <p>
+      <label>Available Letters</label>
+      <br>
+      <input type="text" name="available-letters" id="available-letters" />
+    </p>
+
+    <p>
+      <label>Add Word</label>
+      <br>
+      <input type="text" name="add-word" id="add-word" />
+      <button class="add-word-button">Add</button>
+    </p>
+
+    <p>
+      <label>Remove Word</label>
+      <br>
+      <input type="text" name="remove-word" id="remove-word" />
+      <button class="remove-word-button" disabled>Remove</button>
+    </p>
+
+    <p>
+      <button class="remove-all-words-button" disabled>Remove All Words</button>
+    </p>
+
+    <p>
+      <button class="find-known-words-button">Find Known Words</button>
+    </p>
+
+    <p>
+      <button class="find-available-letter-combinations-button">All Available Letter Combinations</button>
+    </p>
+
+    <hr>
+    <h3>Known Words (<span id="known-words-count">0</span>)</h3>
+    <div class="known-words-container"></div>
+
+    <hr>
+    <h3>All Combinations (<span id="available-combinations-count">0</span>)</h3>
+    <div class="all-available-letter-combinations-container"></div>
+
+    <hr>
+    <h3>Saved Words</h3>
+    <div class="saved-words-container"></div>
+
+    <script src="assets/javascripts/word_cookies.js"></script>
+  </body>
+</html>
